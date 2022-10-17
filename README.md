@@ -1,204 +1,111 @@
-#latihan 1
+**Hallo nama saya Bayu Maulana Ayassy. Disini saya akan menjelaskan cara penggunaan Git yang kita perlukan aialah**  *Applikasi git , akun git*. Sebelum itu saya akan kasih tutorial cara penginstalan **GIT**.
+## Cara penginstalan GIT
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 /
-$ pwd
-/
+  - Pertama anda harus mendownload Aplikasi  Git, buka website resminya Git  di **git-scm.com** .
+  
+  ![Screenshot (17)](https://user-images.githubusercontent.com/115677959/195978004-f83ef297-525c-4675-8d1e-61391bcb8a78.png) *Download lah sesuai dengan bit (32 bit atau 64 bit)laptop anda agar support. Setelah selesai download klik instal*
+- Lalu klik next simpan file lokasi instal di C:\ProgramFiles\Git(sesuai keinginan anda) , lalu di next saja semua sampai ke step install, TUNGGU SAMPAI SELESAI.
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 /
-$ cd ~
+  ![image](https://user-images.githubusercontent.com/56957725/67549597-d8d67380-f72e-11e9-9387-456db6ca1fb8.png)
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~
-$ cd lab_pemrograman/
+- Setelah melakukan penginstalan, buka git cmd  untuk mengetahui apakah sudah bisa melakukan proses atau belum jika muncul git version berarti sudah siap melakukan proses. Untuk mengetahui versinya ketikan perintah **git --version.**  Saya memakai versi 2.38.0.windows.1
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman
-$ cd latihan1/
-bash: cd: latihan1/: No such file or directory
-
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman
-$ mkdir latihan1/
-
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman
-$ cd latihan1/
-
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1
-$ git init
-Initialized empty Git repository in C:/Users/Bayu maulana ayassy/lab_pemrograman/latihan1/.git/
-
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ echo "#latihan 1" >> README.md
-
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git add README.md
-warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
-
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$
-
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ ls -l
-total 1
--rw-r--r-- 1 Bayu maulana ayassy 197121 11 Oct 14 13:32 README.md
-
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git add README.md
-
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git status
-On branch master
-
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   README.md
+  ![2022-10-14](https://user-images.githubusercontent.com/115678251/196099524-5070c9e0-241d-4a75-a454-bdcc6cfe0474.png)
 
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git commit -m "BAYU MAULANA AYASSY"
-Author identity unknown
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### _Cara membuat akun git_
+- Disini anda harus membuat akun git terlebih dahulu  untuk membuat repository server bukalah link tersebut *http://github.com*
 
-*** Please tell me who you are.
-
-Run
-
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-
-fatal: unable to auto-detect email address (got 'Bayu maulana ayassy@LAPTOP-OB2RGAL6.(none)')
-
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git config --global user.email "bayuwakwaww20@gmail.com
-> git config --global.user "Bayu"
-> git config --global user.name "Bayu"
-> git config --global user.email "bayuwakwaww20@gmail.com
-git config --global.user "Bayu"
-git config --global user.name "Bayu"
-error: unknown option `global.user'
-usage: git config [<options>]
-
-Config file location
-    --global              use global config file
-    --system              use system config file
-    --local               use repository config file
-    --worktree            use per-worktree config file
-    -f, --file <file>     use given config file
-    --blob <blob-id>      read config from given blob object
-
-Action
-    --get                 get value: name [value-pattern]
-    --get-all             get all values: key [value-pattern]
-    --get-regexp          get values for regexp: name-regex [value-pattern]
-    --get-urlmatch        get value specific for the URL: section[.var] URL
-    --replace-all         replace all matching variables: name value [value-pattern]
-    --add                 add a new variable: name value
-    --unset               remove a variable: name [value-pattern]
-    --unset-all           remove all matches: name [value-pattern]
-    --rename-section      rename section: old-name new-name
-    --remove-section      remove a section: name
-    -l, --list            list all
-    --fixed-value         use string equality when comparing values to 'value-pattern'
-    -e, --edit            open an editor
-    --get-color           find the color configured: slot [default]
-    --get-colorbool       find the color setting: slot [stdout-is-tty]
-
-Type
-    -t, --type <type>     value is given this type
-    --bool                value is "true" or "false"
-    --int                 value is decimal number
-    --bool-or-int         value is --bool or --int
-    --bool-or-str         value is --bool or string
-    --path                value is a path (file or directory name)
-    --expiry-date         value is an expiry date
-
-Other
-    -z, --null            terminate values with NUL byte
-    --name-only           show variable names only
-    --includes            respect include directives on lookup
-    --show-origin         show origin of config (file, standard input, blob, command line)
-    --show-scope          show scope of config (worktree, local, global, system, command)
-    --default <value>     with --get, use default value when missing entry
+![2022-10-17 (1)](https://user-images.githubusercontent.com/115678251/196099586-9031f90c-b7e7-49bc-9bae-a7f7614994e7.png)
 
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git status
-On branch master
+- Pada langka selanjutnya anda boleh langsung diskip saja.
+   
+  ### _Membuat repositori baru_
 
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   README.md
+- Ini adalah tampilan pertama setelah kalian selesai membuat akun git
+![2022-10-17](https://user-images.githubusercontent.com/115678251/196100057-114397ce-5bcf-48af-8039-93713e9934db.png)
 
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git commit -m "bayu"
-[master (root-commit) 428dbec] bayu
- 1 file changed, 1 insertion(+)
- create mode 100644 README.md
+- Langkah selanjutnya nanti anda akan dialihkan ke tab baru untuk membuat repositori baru, isi susuai inspirasi anda setelah selesai klik buat repositori. 
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git remote add origin https://github.com/Bayuayassy/tugas3.git
+ ![2022-10-17 (3)](https://user-images.githubusercontent.com/115678251/196100274-22e1ce62-e186-4423-9217-f8ca28367cc9.png)
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git push -u origin master
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git status
-On branch master
-nothing to commit, working tree clean
+-  Lalu nanti di tab baru ada url, url ini akan digunakan untuk remote GitHub.
+![2022-10-17 (4)](https://user-images.githubusercontent.com/115678251/196100470-b109db46-403a-42db-9b0b-3fc36c2ac10b.png)
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git push -u origin master
-fatal: User canceled device code authentication
-error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/git-askpass.exe'
-username for 'https://github.com': Bayuayassy
-userremote: Support for password authentication was removed on August 13, 2021.
-remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
-fatal: Authentication failed for 'https://github.com/Bayuayassy/tugas3.git/'
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git push -u origin master
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 254 bytes | 254.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/Bayuayassy/tugas3.git
- * [new branch]      master -> master
-branch 'master' set up to track 'origin/master'.
+### _Membuat Repository Local_
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git push -u origin masterser
-error: src refspec masterser does not match any
-error: failed to push some refs to 'https://github.com/Bayuayassy/tugas3.git'
+- Lalu kita buka file explorer pilih dilocal disk (c) (atau dmana saja sesuai keinginan anda), lalu klik kanan pilih **Git Bash here** .
+![2022-10-17 (5)](https://user-images.githubusercontent.com/115678251/196100698-7de8bd79-37b2-4f58-ade1-5061bb66c9d7.png)
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git push -u origin master
-Everything up-to-date
-branch 'master' set up to track 'origin/master'.
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git remote add origin https://github.com/Bayuayassy/tugas3.git
-error: remote origin already exists.
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ git clone https://github.com/Bayuayassy/tugas3.git
-Cloning into 'tugas3'...
-remote: Enumerating objects: 3, done.
-remote: Counting objects: 100% (3/3), done.
-remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
-Receiving objects: 100% (3/3), done.
+- Lalu kita akan menambahkan Config Global Repository  pakai user name dan user email yang tadi sudah dibuat, dengan perintah : 	
+      **$ git config --global user.email “nama_user”**
+      **$ git config --global user.name “nama_user”**
+![2022-10-14 (2)](https://user-images.githubusercontent.com/115678251/196101093-2c28c068-f757-4eeb-951b-aab19cd7ab56.png)
 
-Bayu maulana ayassy@LAPTOP-OB2RGAL6 MINGW64 ~/lab_pemrograman/latihan1 (master)
-$ ls -l
-total 1
--rw-r--r-- 1 Bayu maulana ayassy 197121 11 Oct 14 13:32 README.md
-drwxr-xr-x 1 Bayu maulana ayassy 197121  0 Oct 14 14:10 tugas3/
-![2022-10-14 (1)](https://user-images.githubusercontent.com/115678251/195797726-8b7a86fd-8210-4d63-b37d-53f2a5b72fea.png)
-![2022-10-14 (2)](https://user-images.githubusercontent.com/115678251/195797740-5d48fec4-0e4a-4476-bfd4-e3850017249e.png)
-![2022-10-14 (3)](https://user-images.githubusercontent.com/115678251/195797744-673d9272-4a5c-4b76-a160-eee3f0f3ca70.png)
-![2022-10-14 (4)](https://user-images.githubusercontent.com/115678251/195797750-3b5d8b9b-539b-449d-af1e-6c2101f8c8c3.png)
-![2022-10-14 (5)](https://user-images.githubusercontent.com/115678251/195797759-c1701a0e-2ca2-4e30-af75-b40f51b4c21c.png)
-![2022-10-14](https://user-images.githubusercontent.com/115678251/195797766-40173a57-aaca-43e2-a87f-e527096f8d6a.png)
+ 
+
+
+- Buatlah direktori baru dengan menggunakan perintah *" mkdir lab_pemrograman1 "*  LALU *" cd lab_pemrograman1 ![2022-10-14](https://user-images.githubusercontent.com/115678251/196101264-8b6704b3-b27e-405b-96d4-6e5e86422ef1.png)
+
+ "*.
+
+ ##### _Cara penggunaan git dengan perintah daasar git init fungsi  perintahnya  untuk membuat repository local_ 
+
+- Lalu jalankan perintah *git init* untuk membuat membuat file kosong berformat GIT. File ini fungsinya untuk menyimpan semua perubahan pada working directory dan file ini terbentuknya hidden.
+ 
+  ![2022-10-14](https://user-images.githubusercontent.com/115678251/196101644-235961cc-c076-49f5-aa79-f06a5d5d8305.png)
+
+
+
+-  Lalu buat 1 file baru bernama README.md, dengan memasukan perintah _echo “#latihan1” >> README.md. Lalu untuk melihat file ketik perintah “ls 
+
+   ![2022-10-14 (5)](https://user-images.githubusercontent.com/115678251/196101778-83f6c99f-7947-4bd9-bf51-f4862a0f5fdf.png)
+
+ ##### _Cara penggunaan git dengan perintah dasar git add  fungsi perintahnya untuk menambahkan file baru, atau perubahan pada file pada staging sebelum proses commit_
+- Untuk menambahkan file yang baru saja dibuat tersebut gunakan perintah *git add*. Dengan perintah _$ git add README.md_. Kalau ingin melihat infonya ketik perintah _git status_.
+- ![2022-10-14 (1)](https://user-images.githubusercontent.com/115678251/196102261-03151e0a-ba0b-482d-b17d-de468cdeb00a.png)
+
+
+
+- Untuk menyimpan perubahan yang ada kedalam database gunakan perintah _git commit -m “komentar commit"_
+  ![2022-10-14 (3)](https://user-images.githubusercontent.com/115678251/196102526-dfb9dc7a-6893-4d01-bd04-3e6c778e81be.png)
+
+
+##### **File berhasil tersimpan**
+
+-  Langkah berikutnya kita kembali ke website GitHub untuk melihat repositori yang sudah dibuat.
+Nah di Quick Setup nanti ada url github kita, url tersebut untuk perintah_ “git remote add origin [url] “ DAN PERINTAH GIT CLONE “ git clone [ url ] “_
+
+ ##### _Cara penggunaan git dengan perintah dasar  git remote add origin [url], perintah untuk menambahkan remote server/reopsitory server pada local repositry (working directory)_
+
+- Sudah mengetahui url githubnya lalu ketik perintah git remote add origin [url],urlnya diganti dengan url github anda https://github.com/Bayuayassy/tugas3.git
+   ![2022-10-14 (3)](https://user-images.githubusercontent.com/115678251/196102737-7035178b-4097-4747-aa60-4fa69af7ceb3.png)
+
+
+
+ ##### _Cara penggunaan git dengan perintah dasar git push -u origin master, perintah untuk mengirim perubahan pada repository local menuju server repository_
+
+- Untuk  mengirim perubahan pada local repository ke server gunakan perintah “git push -u origin master”. Ingat pada langkah ini kita harus memasukan usernam dan pasword gethub.
+   ![2022-10-14 (5)](https://user-images.githubusercontent.com/115678251/196102932-b5896579-9ae1-4681-ada3-80cc08033e9b.png)
+
+
+ ##### _Cara penggunaan git dengan perintah dasar  git clone [url], perintah untuk membuat working directory yang diambil dari repositry sever._
+
+- Kalau ingin melakukan cloning, gunakan perintah git clone [url], urlnya diganti dengan url github anda https://github.com/Bayuayassy/tugas3.git . Jika ingin masuk kedirektorti gunakan perintah “cd [nama direktori anda]”, dan jika ingin melihat semua isi direektori gunakan perintah _“ls -1"_
+  ![2022-10-14 (5)](https://user-images.githubusercontent.com/115678251/196103050-010f3b4f-923f-4a44-bfd2-682bfa93b820.png)
+
+
+
+-  Selesai Jika ingin melihat hasilnya cek di  laman gethub arahkan ke repositorinya
+  
+#### **FILE README.md tersebut masih kosong jikalau anda ingin mengisi kekosongan file tersebut silahkan klik saja icon pensil yang berada di kanan atas**.
+#Terimakasih#
+
+ 
